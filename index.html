@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Gazette</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+        .column {
+            padding: 20px;
+        }
+        .left-column {
+            flex: 0 0 15%;
+            background-color: #f0f0f0;
+        }
+        .middle-column {
+            flex: 0 0 50%;
+            background-color: #ffffff;
+        }
+        .ad-column {
+            flex: 0 0 35%;
+            background-color: #e6e6e6;
+        }
+        header, footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        aside {
+            background-color: #ffe6e6;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        figure {
+            background-color: #e6f2ff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .nav-item {
+            background-color: #d1d1d1;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><marquee>The Daily Gazette</marquee></h1>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column left-column">
+            <nav>
+                <div class="nav-item">Home</div>
+                <div class="nav-item">Politics</div>
+                <div class="nav-item">Business</div>
+                <div class="nav-item">Technology</div>
+                <div class="nav-item">Sports</div>
+                <div class="nav-item">Entertainment</div>
+            </nav>
+            
+            <aside style="background-color: #d4edda; color: #155724; font-size: 14px;">
+                <h3>Today's Weather</h3>
+                <p>Sunny, 75°F (24°C)</p>
+            </aside>
+        </div>
+        
+        <div class="column middle-column">
+            <article>
+                <h2>Breaking News: Global Summit Concludes</h2>
+                <p>World leaders reached a landmark agreement on climate change, pledging to reduce carbon emissions by 50% by 2030. The historic deal, signed by 195 countries, marks a turning point in global environmental policy.</p>
+            </article>
+            
+            <section>
+                <h2>Local News</h2>
+                <article>
+                    <h3>City Plans New Park</h3>
+                    <p>The city council has approved plans for a new central park, set to break ground next month. The project aims to increase green spaces and provide recreational areas for residents.</p>
+                </article>
+            </section>
+            
+            <section>
+                <h2>Technology</h2>
+                <article>
+                    <h3>Revolutionary AI Breakthrough</h3>
+                    <p>Scientists at Tech University have developed a new AI model capable of understanding and generating human-like text with unprecedented accuracy, raising both excitement and ethical concerns in the tech community.</p>
+                </article>
+            </section>
+        </div>
+        
+        <div class="column ad-column">
+            <aside style="background-color: #fff3cd; color: #856404; font-size: 18px;">
+                <h3>Special Offer!</h3>
+                <p>Subscribe now and get 3 months free!</p>
+            </aside>
+            
+            <figure style="background-color: #d1ecf1; color: #0c5460;">
+                <img src="phone.jpg" alt="New Smartphone" width="200" height="100">
+                <figcaption>The all-new Smartphone X - Available now!</figcaption>
+            </figure>
+            
+            <section style="background-color: #f8d7da; color: #721c24; font-size: 16px;">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>Summer Music Festival - July 15-17</li>
+                    <li>International Food Fair - August 5-7</li>
+                </ul>
+            </section>
+            
+            <article style="background-color: #e2e3e5; color: #383d41; font-size: 14px;">
+                <h3>Travel Deals</h3>
+                <p>Explore Europe this summer! Flights starting at just $499!</p>
+            </article>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ACME</td>
+                        <td>$50.25</td>
+                        <td>+2.3%</td>
+                    </tr>
+                    <tr>
+                        <td>GLOBEX</td>
+                        <td>$78.10</td>
+                        <td>-1.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 The Daily Gazette. All rights reserved.</p>
+    </footer>
+</body>
+</html>
